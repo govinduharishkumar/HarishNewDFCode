@@ -1,0 +1,72 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "CarDealersFinancials.csv",
+				"container": "raw-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "DealerID",
+				"type": "String"
+			},
+			{
+				"name": "DealerName",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "DealerType",
+				"type": "String"
+			},
+			{
+				"name": "Brand",
+				"type": "String"
+			},
+			{
+				"name": "TotalSales",
+				"type": "String"
+			},
+			{
+				"name": "GrossProfit",
+				"type": "String"
+			},
+			{
+				"name": "OperatingExpenses",
+				"type": "String"
+			},
+			{
+				"name": "NetProfit",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeCount",
+				"type": "String"
+			},
+			{
+				"name": "InventoryValue",
+				"type": "String"
+			},
+			{
+				"name": "YearEstablished",
+				"type": "String"
+			}
+		]
+	}
+}
